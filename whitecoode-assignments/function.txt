@@ -1,0 +1,10 @@
+1. Create a function that convert the following:
+    a. Inches to centimeter
+    b. Centimeter to Inches
+    c. Feet to meters
+
+2. Create a function that convert the following number of days
+    a. 4 days to hours
+    b. 6 days to hours
+    c. 7 days to minutes
+    d. 1 day to seconds
