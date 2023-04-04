@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        const person = {
+  firstName: "",
+  lastName : "",
+  id       : "" ,
+  age      : "" ,
+  dateOfBirth      : "" ,
+  occupation : "" ,
+  fullName :function() {
+    return this.firstName + " " + this.lastName;
+  },
+ carName  : "",
+  height  : ""
+  
+};
+
+function properties({firstName, lastName, id, age, dob, occupation, carName, height, }) {
+   person.firstName = firstName,
+  person.lastName = lastName,
+ person.id       =id ,
+ person.age      =  age ,
+  person.dateOfBirth     = dob ,
+ person.occupation = occupation ,
+ person.carName = carName,
+ person.height = height
+ return person
+};
+
+const outLine = properties({
+    firstName: "muhammd",
+  lastName : "sadiq",
+  id       : "5522" ,
+  age      : "15" ,
+  dob     : "2007-05-05" ,
+  occupation : "developer" ,
+  carName  : "parado",
+  height  : "2.54m"
+}) ;
+
+console.log(outLine)
+    </script>
+</body>
+</html>
