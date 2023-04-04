@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // from 4 days to hour 
+        function convertToHour(Days){
+            // 1 day make 24 hour 
+            const Hour = 24;
+
+            return Days * Hour
+        }
+        let output = convertToHour(4)
+
+        console.log(output + "hr")
+
+
+         // from 6 days to hour 
+         function convertToHour(Days){
+            // 1 day make 24 hour 
+            const Hour = 24;
+
+            return Days * Hour
+        }
+        let output2 = convertToHour(6)
+
+        console.log(output2 + "hr")
+
+         // from 7 days to minute 
+         function convertToHourThenMinute(Days){
+            // 1 day make 24 hour 
+            const Hour = 24;
+            // 1 sec make 60 min
+const minute = 60
+            return Days * Hour * minute
+        }
+        let output3 = convertToHourThenMinute(7)
+
+        console.log(output3 + "min")
+
+        
+
+             // from 1 days to seconds 
+             function convertToHourThenSeconds(Days){
+            // 1 day make 24 hour 
+            const Hour = 24;
+            // 1 min make 60 * 60 sec
+let Seconds = 60 * 60
+            return Days * Hour * Seconds
+        }
+        let output4 = convertToHourThenSeconds(1)
+
+        console.log(output4 + "sec")
+    </script>
+</body>
+</html>
