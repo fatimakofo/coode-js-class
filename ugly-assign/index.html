@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UF assignment</title>
+</head>
+<body>
+    <script>
+        //ASSIGNMENT ONE(1)
+
+         // A function that convert inches to centimeter
+        function inchesConversion (inches){
+            const centimeter = 2.54;
+
+        
+        return inches / centimeter;
+        }
+        let output = inchesConversion (2);
+        console.log (output + "cm");
+
+
+         // A function that convert centimeter to inches
+
+        function centConversion (centimeter){
+            const inches = 2.54;
+            return inches * centimeter;
+        }
+        let result = centConversion (1);
+        console.log (result + "inches");
+
+
+         // A function that convert Feet to meters
+
+        function feetConversion (feet){
+            const meters = 3.28;
+            return feet / meters;
+        }
+        let convert = feetConversion (3);
+        console.log (convert + "m");
+
+        //ASSIGNMENT TWO(2)
+
+          // A function that convert days to hours
+        function hoursConversion (days){
+            const hours = 24;
+            return days * hours;
+        }
+
+        let print = hoursConversion (4);
+        console.log (print + "h");
+        let display = hoursConversion (6)
+        console.log (display + "h")
+
+
+          // A function that convert days to minutes
+        function minutesConversion (days){
+            const minutes = 60;
+            const hours = 24;
+            return days * hours * minutes;
+        }
+
+        let conversion = minutesConversion (7);
+        console.log (conversion + "minutes");
+      
+          // A function that convert days to seconds
+
+        function secondsConversion (days){
+            const seconds = 60;
+            const minutes = 60;
+            const hours = 24;
+            return days * seconds * minutes * hours;
+        }
+
+        let con = secondsConversion (1);
+        console.log (con + "s");
+      
+
+</script>
+</body>
+</html>
