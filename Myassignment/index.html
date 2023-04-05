@@ -307,6 +307,38 @@
          let totalSeconds = convertToSeconds(1)
          console.log(totalSeconds)
       }
+
+
+
+
+
+
+               // OBJECTS
+
+      {
+         const phone = {
+            phoneName: "",
+            dateOfCreation: "",
+            phoneType: "",
+            // fullInfo: function () {
+            //    return this.phoneName + " " + this.phoneType
+            // }
+         };
+
+         function newPhone({ phoneName, dateOfCreation, phoneType }) {
+            phone.phoneName = phoneName;
+            phone.phoneType = phoneType;
+            phone.dateOfCreation = dateOfCreation;
+            return phone;
+         };
+
+         const phone_one = newPhone({
+            phoneName: "Nokia 3310",
+            phoneType: "Android",
+            dateOfCreation: "2023-04-05",
+         });
+         console.log(phone_one)
+      }
     </script>
 
 </body>
