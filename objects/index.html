@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Example 1
+      // let carName = "Volvo"
+      // let carModel = 2022
+      // let carColor = "Green"
+      // an object contain properties and method
+      let car = {
+        name: "Nenz",
+        model: "c202300",
+        color: "White",
+        isStart: false,
+        carAge: 12,
+        start: function () {
+          return "Car starting...";
+        },
+        owner: "Gov.P",
+        info: function () {
+          return "My name is " + car.owner + ", I own " + this.name;
+        },
+        test: function () {
+          return this;
+        },
+      };
+
+      car.name = "Toyota";
+      car["owner"] = "F.M";
+
+      // dot notation
+      // console.log(car.name, car.model);
+
+      // named Property
+      // console.log(car['name'], car['model']);
+
+      //   let output = car.start();
+      //   let output = car.test();
+      //   console.log(output);
+
+      // I have a list of students, so i will like to create an object
+      // that content the data that i will like to extract from every student.
+
+      const student = {
+        firstName: "",
+        lastName: "",
+        dateOfBirth: "",
+        gender: "",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+        grade: "",
+        pass: false,
+        setPass: function (p) {
+          this.pass = p;
+        },
+      };
+
+      function newStudent({ firstName, lastName, DOB, gender, pass, grade }) {
+        student.firstName = firstName;
+        student.lastName = lastName;
+        student.dateOfBirth = DOB;
+        student.gender = gender;
+        student.grade = grade;
+        student.setPass(pass);
+        return student;
+      }
+
+      const student_one = newStudent({
+          lastName: "wale",
+          DOB: "2012-02-02",
+          gender: "Male",
+          pass: false,
+          grade: "D7",
+          firstName: "Kola",
+      });
+      console.log(student_one);
+    </script>
+  </body>
+</html>
