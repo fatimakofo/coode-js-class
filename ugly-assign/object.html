@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating a medical patient object
+        
+        const patient = {
+        patientName: "",
+        patientIdNo: "",
+        dateOfBirth: "",
+        gender: "",
+       
+      };
+      
+        function newPatient ({patientName, patientIdNo, dateOfBirth, gender}) {
+            patient.patientName = patientName;
+            patient.patientIdNo = patientIdNo;
+            patient.dateOfBirth = dateOfBirth;
+            patient.gender = gender;
+            return patient
+        }    
+        const kPatient = newPatient ({
+            patientName:'femi',
+            patientIdNo:'ID0080',
+            dateOfBirth: '20022020202-22929929',
+            gender: 'male',
+        });
+
+        console.log(kPatient)
+    </script>
+</body>
+</html>
