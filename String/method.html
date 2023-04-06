@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let output;
+      let text = " I am just learning javascript and javascript.";
+
+      // slice method for slicing out some part of a string
+      // output =  text.slice(1);// can also accept a single parameter which serve as the starting part. Note this will slice from that start position to the end
+      // output =  text.slice(0, 4);
+      // output =  text.slice(-11, -1);// can accept negative value. Note the count start from the end
+
+      // substring method is similar to slice() The difference is that start and end values less than 0 are treated as 0 in substring()
+      // output =  text.substring(1);// can also accept a single parameter which serve as the starting part. Note this will slice from that start position to the end
+      // output =  text.substring(1, 11);
+
+      // substr method is similar to slice() The difference is that the second parameter specifies the length of the extracted part.
+      // output = text.substr(0, 4);
+
+      // Replace :The replace() method replaces a specified value with another value in a string:
+      // output =  text.replace('javascript','nodejs')
+      // output =  text.replace(/JAVASCRIPT/i,'nodejs') // ignoring case sensitivity
+      // output =  text.replace(/javascript/g,'nodejs') // to replace all
+      // output =  text.replace(/JAVASCRIPT/ig,'nodejs') // to replace all and ignoring case sensitivity
+
+      // Conversion of cases, toLowerCase() and toUpperCase()
+      // output = text.toUpperCase();
+      // output = text.toLowerCase();
+
+      // concat() joins two or more strings:
+      // output = text.concat(" or vue.js")
+
+      // Trim : The trim() method removes whitespace from both sides of a string:
+      // The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+      // The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+      //   output = "       this is the new text        ";
+      // console.log(output.trim());
+
+      /*
+        The padStart() method pads a string from the start.
+        It pads a string with another string (multiple times) until it reaches a given length.
+        */
+      let num = "5";
+      //   output = num.padStart(4, "0");
+      //   output = num.padEnd(4, "0");
+
+      //example for an email address
+      //   function padAValue(user) {
+      //     let newUser = user.slice(4);
+      //     return newUser.padStart(user.length, "*");
+      //   }
+      //   output = padAValue("hello@malhub.org");
+      //   output = padAValue("habe@malhub.org");
+
+      // Extracting String Characters, we can use the following to extract a character from a String
+      // output = text.charAt(1); // The charAt() method returns the character at a specified index (position) in a string:
+
+      //   output = text.charCodeAt(1) // The charCodeAt() method returns the unicode of the character at a specified index in a string
+      //   output = text[3] // ECMAScript 5 (2009) allows property access [ ] on strings:
+
+      let email = "iam@gmail.com";
+
+    //   output = email.split("@"); //A string can be converted to an array with the split() method:
+      console.log(output);
+    </script>
+  </body>
+</html>
