@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      const students = ["kola", "Bola", "Ayo", "zillium"];
+      const points = [40, 100, 1, 5, 25, 10];
+    //   students.sort()
+    //   students.reverse();
+
+    // sorting for numbers in an ascending form
+    // points.sort(function(a,b){
+    //     return a - b;
+    // });
+    // sorting for numbers in an descending form
+    // points.sort(function(a,b){
+    //     return b - a;
+    // });
+
+
+
+    const people = [
+        {
+            name:"Tolu",
+            dob:2004,
+        },
+        {
+            name:"olu",
+            dob:2010,
+        },
+        {
+            name:"Bolu",
+            dob:1994,
+        },
+        {
+            name:"sola",
+            dob:2014,
+        },
+        {
+            name:"ola",
+            dob:2023,
+        },
+    ]
+
+    people.sort(function(a,b){
+        return a.dob - b.dob;
+    })
+    console.log(people);
+
+
+    </script>
+</body>
+</html>
