@@ -207,25 +207,31 @@
    //    console.log(z)
    //   }
    // /* A NEW SECTIONS */
-   //  let markHeight = 1.69;
-   //  let markMass = 78;
-   //  let markBMI = markMass / markHeight ** 2;
-   // //  for john
-   // let johnHeight = 1.95;
-   //  let johnMass = 92;
-   //  let johnBMI = johnMass / johnHeight ** 2;
-   //  let markHigherBMI = markBMI > johnBMI;
-   //  console.log(markHigherBMI) 
-   //  /* Another Section*/
-   //  {let markHeight = 1.88;
-   //  let markMass = 95;
-   //  let markBMI = markMass / markHeight ** 2;
-   // //  for john
-   // let johnHeight = 1.76;
-   //  let johnMass = 85;
-   //  let johnBMI = johnMass / johnHeight ** 2;
-   //  let markHigherBMI = markBMI > johnBMI;
-   //  console.log(markHigherBMI) }
+    let markHeight = 1.69;
+    let markMass = 78;
+    let markBMI = markMass / markHeight ** 2;
+   //  for john
+   let johnHeight = 1.95;
+    let johnMass = 92;
+    let johnBMI = johnMass / johnHeight ** 2;
+    let markHigherBMI = markBMI > johnBMI;
+    console.log(markHigherBMI) 
+    /* Another Section*/
+    {let markHeight = 1.88;
+    let markMass = 95;
+    let markBMI = markMass / markHeight ** 2;
+   //  for john
+   let johnHeight = 1.76;
+    let johnMass = 85;
+    let johnBMI = johnMass / johnHeight ** 2;
+    let markHigherBMI = markBMI > johnBMI;
+    console.log(markHigherBMI) }
+         //  IF ELSE STATEMENTS
+   if(markBMI > johnBMI) {
+      console.log(`mark's BMI ${markBMI} is higher than john's BMI ${johnBMI}`)
+   } else {
+      console.log("john's BMI is higher than mark's")
+   }
     
    //    function toSecond(Minutes) {
    //       let seconds = 60;
@@ -238,107 +244,107 @@
                // NUMBER 1
 
       // CONVERTING INCHES TO CENTIMETER
-         function convertToCentimeters(inches) {
-            let centimeter = 2.54;
-            return 2.54 * inches;
-         } 
-         let output = convertToCentimeters(3)
-         console.log(output)
+      //    function convertToCentimeters(inches) {
+      //       let centimeter = 2.54;
+      //       return 2.54 * inches;
+      //    } 
+      //    let output = convertToCentimeters(3)
+      //    console.log(output)
 
 
-         // CONVERTING CENTIMETER TO INCHES
-         function convertToInches(Centimeter) {
-            let inches = 1;
-            return 1 * Centimeter;
-         } 
-         let result = convertToInches(3)
-         console.log(result)
+      //    // CONVERTING CENTIMETER TO INCHES
+      //    function convertToInches(Centimeter) {
+      //       let inches = 1;
+      //       return 1 * Centimeter;
+      //    } 
+      //    let result = convertToInches(3)
+      //    console.log(result)
 
 
-         // CONVERTING FEET TO METERS
-         function convertToMeters(feet) {
-            let meter = 0.3048;
-            return 0.3048 * feet;
-         }
-         let totalFeet =  convertToMeters(7)
-         console.log(totalFeet)
+      //    // CONVERTING FEET TO METERS
+      //    function convertToMeters(feet) {
+      //       let meter = 0.3048;
+      //       return 0.3048 * feet;
+      //    }
+      //    let totalFeet =  convertToMeters(7)
+      //    console.log(totalFeet)
 
 
-         // NUMBER 2
+      //    // NUMBER 2
 
-       {  // CONVERTING 4 DAYS TO HOURS
-         function convertToHours(days) {
-            let hours = 24;
-            return 24 * days;
-         }
-         let totalHours = convertToHours(4)
-         console.log(totalHours)
-      }
-
-
-
-
-          {// CONVERTING 6 DAYS TO HOURS
-          function convertToHours(days) {
-            let hours = 24;
-            return 24 * days;
-         }
-         let totalHours = convertToHours(6)
-         console.log(totalHours)
-      }
-
-
-        {// CONVERTING 7 DAYS TO MINUTES
-         function convertToMinutes(days) {
-            let minutes = 1440;
-            return 1440 * days;
-         }
-         let totalMinutes = convertToMinutes(7)
-         console.log(totalMinutes)
-      }
-
-
-
-       {// CONVERTING 1 DAYS TO SECONDS
-         function convertToSeconds(days) {
-            let Seconds = 86400;
-            return 86400 * days;
-         }
-         let totalSeconds = convertToSeconds(1)
-         console.log(totalSeconds)
-      }
+      //  {  // CONVERTING 4 DAYS TO HOURS
+      //    function convertToHours(days) {
+      //       let hours = 24;
+      //       return 24 * days;
+      //    }
+      //    let totalHours = convertToHours(4)
+      //    console.log(totalHours)
+      // }
 
 
 
 
+      //     {// CONVERTING 6 DAYS TO HOURS
+      //     function convertToHours(days) {
+      //       let hours = 24;
+      //       return 24 * days;
+      //    }
+      //    let totalHours = convertToHours(6)
+      //    console.log(totalHours)
+      // }
 
 
-               // OBJECTS
+      //   {// CONVERTING 7 DAYS TO MINUTES
+      //    function convertToMinutes(days) {
+      //       let minutes = 1440;
+      //       return 1440 * days;
+      //    }
+      //    let totalMinutes = convertToMinutes(7)
+      //    console.log(totalMinutes)
+      // }
 
-      {
-         const phone = {
-            phoneName: "",
-            dateOfCreation: "",
-            phoneType: "",
-            // fullInfo: function () {
-            //    return this.phoneName + " " + this.phoneType
-            // }
-         };
 
-         function newPhone({ phoneName, dateOfCreation, phoneType }) {
-            phone.phoneName = phoneName;
-            phone.phoneType = phoneType;
-            phone.dateOfCreation = dateOfCreation;
-            return phone;
-         };
 
-         const phone_one = newPhone({
-            phoneName: "Nokia 3310",
-            phoneType: "Android",
-            dateOfCreation: "2023-04-05",
-         });
-         console.log(phone_one)
-      }
+      //  {// CONVERTING 1 DAYS TO SECONDS
+      //    function convertToSeconds(days) {
+      //       let Seconds = 86400;
+      //       return 86400 * days;
+      //    }
+      //    let totalSeconds = convertToSeconds(1)
+      //    console.log(totalSeconds)
+      // }
+
+
+
+
+
+
+      //          // OBJECTS
+
+      // {
+      //    const phone = {
+      //       phoneName: "",
+      //       dateOfCreation: "",
+      //       phoneType: "",
+      //       // fullInfo: function () {
+      //       //    return this.phon eName + " " + this.phoneType
+      //       // }
+      //    };
+
+      //    function newPhone({ phoneName, dateOfCreation, phoneType }) { 
+      //       phone.phoneName = phoneName;
+      //       phone.phoneType = phoneType;
+      //       phone.dateOfCreation = dateOfCreation;
+      //       return phone;
+      //    };
+
+      //    const phone_one = newPhone({
+      //       phoneName: "Nokia 3310",
+      //       phoneType: "Android",
+      //       dateOfCreation: "2023-04-05",
+      //    });
+      //    console.log(phone_one)
+      // }
     </script>
 
 </body>
