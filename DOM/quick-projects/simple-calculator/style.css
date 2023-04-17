@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+div.card {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+div.card h3{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+div.card > div:not(div:last-child){
+  display: flex;
+  align-items: center;
+}
+label {
+  width: 45%;
+  margin: 10px 0;
+}
+label+input{
+  border: none;
+  border: 1px solid gray;
+  padding: 8px 4px;
+  width: 75%;
+  border-radius: 5px;
+}
+
+div.button_container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+button{
+  width: 22%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+}
+button:nth-child(1){
+  background-color: seagreen;
+}
+button:nth-child(2){
+  background-color: red;
+}
+button:nth-child(3){
+  background-color: dodgerblue;
+}
+button:nth-child(4){
+  background-color: coral;
+}

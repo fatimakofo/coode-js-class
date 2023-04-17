@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // An array is a special variable, which can hold more than one value
+      const cars = ["Volvo", "Toyota", "Benz"];
+
+      //   const cars_2 = new Array("Volvo", "Toyota", "Benz"); // don't use this
+      //   console.log(cars == cars_2);
+
+      cars[1] = "Nissan"; // reassigning a new value to a certain index position
+      cars[3] = "Toyota"; //  creating an index that doesn't exist
+
+      console.log(cars);
+      console.log(cars[cars.length - 1]); // accessing last element in an array
+
+      const points = new Array(40) // create a empty array element length of 40
+      //   const points = [40];
+      console.log(points);
+
+      function isArray(arr) {
+        // return Array.isArray(arr); // for checking type of array
+        return arr instanceof Array; // for checking type of array
+      }
+
+    // console.log(isArray(points))
+    console.log(isArray(cars))
+    </script>
+  </body>
+</html>
