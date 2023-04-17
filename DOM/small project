@@ -629,15 +629,15 @@
       // Creating an element
       const newDiv = document.createElement("div");
       const newP = document.createElement("p");
-      const newID =  document.createElement("p");
-      const newA =  document.createElement("p");
+      const newID = document.createElement('p');
+      const newA = document.createElement('p');
 
       // Append child
       newDiv.appendChild(newID);
       newDiv.appendChild(newP);
-      newDiv.appendChild(newA)
-
-
+      newDiv.appendChild(newA);
+      
+      
 
       const button = document.createElement("button");
       button.innerHTML = "Click me and see";
@@ -654,6 +654,8 @@
         newP.innerHTML = qoutes[randomNumber].quote
         newID.innerHTML = qoutes[randomNumber].id
         newA.innerHTML = qoutes[randomNumber].author
+
+        
       });
     </script>
     <script src="./index.js"></script>
