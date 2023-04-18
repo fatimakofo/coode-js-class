@@ -17,9 +17,9 @@ function numOne(e) {
 function numTwo(e) {
   num_two_value = Number(e.target.value);
 }
-function trigerforall() {
-  alert ("")
-}
+// function trigerforall() {
+//   alert ("")
+// }
 
 
 
