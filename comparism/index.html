@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Comparison
+      // let x = 4;
+      // console.log(x === "4");
+
+      // let text;
+      // Working with (if) statement
+      // if(x == 5){
+      //     text = "This is true";
+      // }
+      // if(x == 4 && x > 5){
+      //     text = "This is true x is less than 5 and equal to 4";
+      // }
+      // if(x != 5 || x > 5){
+      //     text = "This is true x is less than 5 or not equal to 4";
+      // }
+
+      // if(!(x === 5)){
+      //     text = "This is true not equal to 4";
+      // }
+
+      // let isLoading = true;
+
+      // isLoading = !isLoading;
+
+      // console.log(isLoading);
+
+      //   function greeting() {
+      //     const hour = new Date().getHours(); // local scoped
+      //     if (hour < 12) {
+      //       return "Good Morning!";
+      //     } else if (hour <= 16) {
+      //       return "Good Afternoon!";
+      //     } else if (hour <= 20) {
+      //       return "Good Evening!";
+      //     } else {
+      //       return "Good Night!";
+      //     }
+      //   };
+      //   console.log(greeting());
+
+      //   function getDayOfTheWeek() {
+      //     const day = new Date().getDay();
+      //     if (day == 0) {
+      //       return "Sunday";
+      //     } else if (day == 1) {
+      //       return "Monday";
+      //     } else if (day == 2) {
+      //       return "Tuesday";
+      //     } else if (day == 3) {
+      //       return "Wednesday";
+      //     } else if (day == 4) {
+      //       return "Thursday";
+      //     } else if (day == 5) {
+      //       return "Friday";
+      //     } else if (day == 6) {
+      //       return "Saturday";
+      //     } else {
+      //       return "Unable to get day";
+      //     }
+      //   }
+
+      //JavaScript Switch Statement
+      /*
+      switch(expression) {
+            case x:
+                // code block
+                break;
+            case y:
+                // code block
+                break;
+            default:
+                // code block
+        }
+      */
+      function getDayOfTheWeek() {
+        const day = new Date().getDay();
+        switch (day) {
+          case 0:
+            return "Sunday";
+            break;
+          case 1:
+            return "Monday";
+            break;
+          case 2:
+            return "Tuesday";
+            break;
+          case 3:
+            return "Wednesday";
+            break;
+          case 4:
+            return "Thursday";
+            break;
+          case 5:
+            return "Friday";
+            break;
+          case 6:
+            return "Saturday";
+            break;
+          default:
+            return "Nothing matches";
+        }
+      }
+      console.log(getDayOfTheWeek());
+    </script>
+  </body>
+</html>
