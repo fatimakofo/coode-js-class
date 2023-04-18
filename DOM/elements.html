@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p class="intro">p1</p>
+      <p class="intro">p2</p>
+      <p class="intro">p3</p>
+      <p class="intro">p4</p>
+      <p class="intro">p5</p>
+
+      <form id="form">
+        <input type="text" />
+        <input type="password" />
+      </form>
+      <form id="form2">
+        <input type="text" />
+        <input type="text" />
+      </form>
+    </div>
+
+    <script>
+      // Getting html element
+      // document.getElementById("intro"); // by id
+      // document.getElementsByTagName("p"); // by tag name
+      // document.getElementsByClassName("intro"); // by class name
+      //  const intros = document.querySelectorAll("p.intro"); // by css selector to get all the element with the exact selector
+      //  const intros = document.querySelector("p.intro"); // by css selector
+      //  intros[0].innerText = '<b>THis is me</b>';
+      //  console.log(intros);
+
+      const form = document.forms["form"];
+
+      for (let i = 0; i < form.length; i++) {
+        const element = form[i];
+        element.placeholder = "I am here " + i;
+        console.log(element);
+      }
+
+      document.title = "Document Object Model";
+      // console.log(form.elements);
+    </script>
+  </body>
+</html>
