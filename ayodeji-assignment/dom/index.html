@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    body {
+        background: black;
+    }
+    #container{
+        background: orange;
+        border-radius: 10px;
+        height: 275px;
+        width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10%;
+        padding-top: 5%;
+    }
+    #btn {
+        margin: 50px auto;
+        height: 50px;
+        width: 250px;
+        font-size: 22px ;
+        background: rgba(65, 255, 2, 0.288);
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+    #output {
+        margin: auto auto;
+        font-size: 26px;
+        color: white;
+    }
+</style>
+<body>
+    <div id="container">
+        <div id="output">Press the button to generate a Quote!</div>
+        <button id="btn">Press for a new Quote</button>
+    </div>
+
+
+    <script>
+        let btn = document.getElementById('btn');
+        let output = document.getElementById('output');
+        let quotes = [
+               
+              " 'monastic love. Sore his drugged mother finds his.' ",
+              " 'To dote dote by disporting for. Long alas .' ",
+              " 'come was alone domestic childe amiss, his maidens and.' ",
+              " 'childe shades high so, below way lay aisle mother' ",
+              " 'finds his from, seek consecrate but through saves.' ",
+              " 'who scorching his of fulness. Mammon pile his pride flatterer.' " ,
+              " 'harold mammon flash pilgrimage despair.' " ,
+              " 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.' ",
+              " 'atque quis suscipit quia est id facere impedit iste non.' "
+        ];
+        btn.addEventListener('click', function(){
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+            output.innerHTML = randomQuote
+        })
+    </script>
+</body>
+</html>
