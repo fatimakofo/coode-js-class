@@ -11,18 +11,59 @@
       const cars = ["Vlovo", "toyota", "benz"];
 
       /*
-        for (expression 1; expression 2; expression 3) {
-            // code block to be executed
-        }
-    */
+          for (expression 1; expression 2; expression 3) {
+              // code block to be executed
+          }
+      */
 
-    //   for (let i = 0; i < 10; i++) {
-    //     let text = `This is a new number ${i}`;
-    //     console.log(text);
-    //   }
-      for (let i = 0; i < cars.length; i++) {
-        console.log(cars[i]);
+      // for (let i = 0; i < cars.length; i++) {
+      //   console.log(cars[i]);
+      // }
+
+      // var a = 2,
+      //   b = 3,
+      //   c = a + b;
+      // Expression 1 : can take in more than one variable
+      // for (let i = 0, text = ""; i < 10; i++) {
+      //   text = `This is a new number ${i}`;
+      //   console.log(text);
+      // }
+
+      //  : can be optional
+      // let i = 0,
+      //   text = "";
+      // for (; condition; i++) {
+      //   text = `This is a new number ${i}`;
+      //   console.log(text);
+      // }
+
+      // Expression 2: is use to check if a condition is true, and also can be optional
+
+      // Expression 3: increments or decrement the value of the initial variable, and also can be optional
+      // for (; i < 10;) {
+      //   text = `This is a new number ${i}`;
+      //   console.log(text);
+      //   i++
+      // }
+
+      // Loop scope
+      // working with var
+      // var i = 5;
+
+      // for (var i = 0; i < 10; i++) {
+
+      //   // some code
+      // }
+      // Here i is 10
+
+      
+      let i = 5;
+      for (let i = 0; i < 10; i++) {
+        // some code
       }
+
+      // Here i is 5
+      console.log(i);
     </script>
   </body>
 </html>
