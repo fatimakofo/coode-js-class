@@ -20,9 +20,12 @@ function numTwo(e) {
 
 add.addEventListener("click", addition);
 function addition() {
-  let result = num_one_value + num_two_value;
+  let result1 = num_one_value + num_two_value;
+  operators(result1)
+  // alert(`Your result of ${num_one_value} and ${num_two_value} is ${result}`)
+}
+function operators(result) {
   alert('Your result of ' + num_one_value + ' and ' + num_two_value + ' is ' + result);
   num_one.value = '';
   num_two.value = '';
-//   alert(`Your result of ${num_one_value} and ${num_two_value} is ${result}`)
 }
