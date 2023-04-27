@@ -17,39 +17,33 @@ function numOne(e) {
 function numTwo(e) {
   num_two_value = Number(e.target.value);
 }
-// function trigerforall() {
-//   alert ("")
+// function result(triger) {
+//    alert('Your result of ' + num_one_value + ' and ' + num_two_value + ' is ' + result);
+//   num_one.value = '';
+//   num_two.value = '';
 // }
-
-
-
-let total = alert()
+function total(result) {
+  alert('Your result of ' + num_one_value + ' and ' + num_two_value + ' is ' + result);
+  num_one.value = "";
+  num_two.value = "";
+}
 add.addEventListener("click", addition);
 function addition() {
-  let result = num_one_value + num_two_value;
-  alert('Your result of ' + num_one_value + ' and ' + num_two_value + ' is ' + result);
-  num_one.value = '';
-  num_two.value = '';
-//   alert(`Your result of ${num_one_value} and ${num_two_value} is ${result}`)
+  let result1 = num_one_value + num_two_value;
+  total(result1);
 }
 sub.addEventListener("click", subtraction);
 function subtraction() {
-  let sub_result = num_one_value - num_two_value;
-  alert('your result for sub ' + num_one_value + ' and ' + num_two_value + ' is ' + sub_result);
-    num_one.value = '';
-  num_two.value = '';
+  let result2 = num_one_value - num_two_value;
+  total(result2);
 }
 mult.addEventListener("click", multiplication);
 function multiplication() {
-  let mult_result = num_one_value * num_two_value;
-  alert('your result for mult ' + num_one_value + ' and ' + num_two_value + ' is ' + mult_result);
-  num_one.value = '';
-  num_two.value = '';
+  let result3 = num_one_value * num_two_value;
+  total(result3);
 }
 div.addEventListener("click", division);
 function division() {
-  let div_result = num_one_value / num_two_value;
-  alert('your result for div ' + num_one_value + ' and ' + num_two_value + ' is ' + div_result);
-  num_one.value = '';
-  num_two.value = '';
+  let result4 = num_one_value / num_two_value;
+  total(result4);
 }
