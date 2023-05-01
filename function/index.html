@@ -18,7 +18,7 @@
         console.log(content);
       }
 
-        // print("I am just learning about function in javascript.");
+      // print("I am just learning about function in javascript.");
 
       function addNumber(a, b) {
         let calculatedValue = a + b;
@@ -26,34 +26,40 @@
         // console.log(a + b);
       }
 
-    //   let output = addNumber(1, 1);
-    //   console.log(output); // this will be undefined because the return is undefined
+      //   let output = addNumber(1, 1);
+      //   console.log(output); // this will be undefined because the return is undefined
 
       // Function return
 
-        function subNumber(a, b, c) {
-          let calculatedValue = a - b - c;
+      function subNumber(a, b, c) {
+        let calculatedValue = a - b - c;
 
-          return calculatedValue;
-          // console.log("Hi"); // can not be reach
-        }
+        return calculatedValue;
+        // console.log("Hi"); // can not be reach
+      }
 
-        // let output = subNumber(10, 5, 1);
+      // let output = subNumber(10, 5, 1);
 
-        // let content = "The output of the subtracted number is " + subNumber(10, 5, 1);
-        // print(content)
+      // let content = "The output of the subtracted number is " + subNumber(10, 5, 1);
+      // print(content)
 
+      // Correction of a function that convert minutes to seconds
+      function convertToSeconds(minute) {
+        const seconds = 60;
+        return minute * seconds;
+      }
+      let output = convertToSeconds(10);
+      print(output);
 
-        // Correction of a function that convert minutes to seconds
-        function convertToSeconds(minute){
-            const seconds = 60;
-            return minute * seconds;
-        }
-        let output = convertToSeconds(10);
-        print(output);
-        
+      // Function Expression
 
-
-   </script>
+      var myFuncExpression = function () {
+        console.log("I am a function");
+      };
+      const addNum = function (a, b) {
+        return a + b;
+      };
+      myFuncExpression();
+    </script>
   </body>
 </html>

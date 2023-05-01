@@ -632,7 +632,7 @@
       const newID = document.createElement('p');
       const newA = document.createElement('p');
 
-      // Append child
+     //Append child
       newDiv.appendChild(newID);
       newDiv.appendChild(newP);
       newDiv.appendChild(newA);
