@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function convertToCm(inches) {
+            const centimetre = 2.54;
+            return inches * centimetre;
+        }
+        let output = convertToCm(1);
+        console.log("Conversion of In to Cm is " + output);
+
+        function convertToIn(centimetre) {
+            const inches = 0.393701;
+            return centimetre * inches;
+        }
+        let outputt = convertToIn(1);
+        console.log("Conversion of Cm to In is " + outputt);
+
+        function convertTofoot(metre) {
+            const foot = 0.3048;
+            return foot * metre;
+        }
+        let Outputt = convertTofoot(1);
+        console.log("Conversion of feet to metre is " + Outputt);
+
+        function convertTohour(day) {
+            const hour = 24;
+            return hour * day;
+        }
+        let hours = convertTohour(4);
+        console.log("Conversion of 4 days to hours is " + hours);
+
+        function convertTohour(day) {
+            const hour = 24;
+            return hour * day;
+        }
+        let Hours = convertTohour(6);
+        console.log("Conversion of 6 days to hours is " + Hours);
+
+        function convertTominutes(day) {
+            const hour = 24;
+            const minute = 60;
+
+            return hour * minute * day;
+        }
+        let minutes = convertTominutes(7);
+        console.log("Conversion of 7 days to minutes is " + minutes);
+
+        function convertToseconds(day) {
+            const hour = 24;
+            const minute = 60;
+            const seconds = 60;
+
+            return hour * seconds * minute * day;
+        }
+        let second = convertToseconds(1);
+        console.log("Conversion of 1 day to seconds is " + second);
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
