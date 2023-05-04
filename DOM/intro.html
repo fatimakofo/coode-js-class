@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <script>
+      // Finding element
+      // document.getElementById(id)	Find an element by element id
+      // document.getElementsByTagName(name)	Find elements by tag name
+      // document.getElementsByClassName(name)	Find elements by class name
+
+      // Changing html element
+      //   Properties
+      // element.innerHTML =  new html content	Change the inner HTML of an element
+      // element.attribute = new value	Change the attribute value of an HTML element
+      // element.style.property = new style	Change the style of an HTML element
+
+      //   document.getElementById("demo").innerHTML = "Hello";
+      //   document.getElementById("demo").style.backgroundColor = "red";
+      //   document.getElementById("demo").style.color = "#fff";
+      //   document.getElementById("demo").title = "this is my first dom work";
+      //   document
+      //     .getElementById("demo")
+      //     .setAttribute("title", "this is my first dom work");
+
+      //   Method
+      // element.setAttribute(attribute, value)	Change the attribute value of an HTML element
+
+      //   Adding and Deleting Elements
+      // Creating an element
+      const newDiv = document.createElement("div");
+      const newP = document.createElement("p");
+      //   const newP2 = document.createElement("a");
+
+      // Append child
+      newDiv.appendChild(newP);
+
+      // Remove an element
+      //   newDiv.removeChild(newP);
+
+      //   Replace child
+      // newDiv.replaceChild(newP2, newP.childNodes[0])
+
+      const button = document.createElement("button");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let output;
+      // Array Method
+      const students = ["kola", "Bola", "Ayo"];
+      // output =  students.toString(); // toString()
+      // output =  students.join("-");// join()
+
+      //   students.push("Hb sonto", "Gov p"); // push() allow you to add a new element to an array from the back
+      //   students.pop(); // pop() allow you to remove a element from an array from the back
+
+      //   students.shift(); // shift() allow you to remove a element from an array from the first
+      //   students.unshift("Hb sonto", "Gov p"); // unshift() allow you to add a new element to an array from the front
+
+      // delete students[0];// delete will create a empty element once the element get removed
+
+      //   const newStudents = ['gentle',"Stubborn","Lousy"];
+
+      //   output = students.concat(newStudents) // concat method allow you to add more array together
+      //   const myArr = [
+      //     [{ name: "Tunde" }, { name: "awade" }],
+      //     [{ name: "ude" }, { name: "ade" }],
+      //     [{ name: "dede" }, { name: "wande" }],
+      //   ];
+
+      //   output = myArr.flat(); // flat turn multiple array into a single array
+
+      // Splicing and Slicing Arrays
+
+      // The splice() method adds new items to an array.
+      students.splice(3, 0, "Ade", "Prince", "Omo nla"); // For adding elements
+      //   students.splice(0, 3); // For removing elements
+
+      // The slice() method slices out a piece of an array into a new array.
+      output = students.slice(2, 5); // this slice method allow you slice out some portion of elements in an array to a new array
+      console.log({ students, output });
+    </script>
+  </body>
+</html>
