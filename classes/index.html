@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Classes
+
+    class Car {
+      constructor(name, model, color) {
+        this.name = name;
+        this.model = model;
+        this.color = color;
+      }
+      name = "";
+      model = "";
+      color = "";
+    }
+
+    //   Using a class to create an object
+    const myFirstCar = new Car("Toyota", "Corolla", "white");
+
+    console.log(myFirstCar);
+
+    class student {
+      constructor(firstName, lastName, age, promoted) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.promoted = promoted;
+      }
+
+      firstName = '';
+      lastName = '';
+      age;
+      promoted = false;
+
+      fullName() {
+        return this.firstName + ' ' + this.lastName;
+      }
+    }
+
+    const newStudent = new student("Tolu", "Ade", 20, true);
+
+    class person extends student {
+      constructor(firstName, lastName) {
+        super(firstName, lastName);
+      }
+      get fname() {
+        return this.firstName
+      }
+      set fname(newName) {
+        this.firstName = newName;
+      }
+
+      static showFn() {
+        console.log('This value is static');
+      }
+    }
+
+    const newPerson = new person('Kola', 'woye');
+    newPerson.fname = "Tolu";
+    console.log(newPerson.fname)
+
+    person.showFn()
+  </script>
+</body>
+
+</html>

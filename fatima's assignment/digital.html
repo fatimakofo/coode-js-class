@@ -16,56 +16,64 @@
       width: 100%;
       height: 100vh;
       background-color: rgb(29, 27, 27);
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      display: flex;
+   
     }
     div {
-      width: 70%;
-      height: 250px;
-      /* background-color: bisque; */
-      /* display: flex; */
-      /* justify-content: space-around; */
-    }
-    span {
-      width: 70%;
+      width: 40%;
       height: 150px;
-      background-color: rgb(195, 185, 185);
-      box-shadow: 0 0 30px;
-      border-radius: 10px;
-      display: inline-block;
+      background-color: bisque;
+       display: flex; 
+       justify-content: space-around; 
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+      }
+      span {
+        font-size: 45px;
+        width: 30%;
+        height: auto;
+        background-color: rgb(195, 185, 185);
+        box-shadow: 0 0 30px;
+        border-radius: 10px;
+      }
+      p {
+        color: white;
+        margin-inline-start: 50px;
+        /* position: absolute; */
+        /* top: -50%;
+        left: 50%;
+      transform: translate(-50%, -50%); */
     }
-    p {
-      margin-top: 100px;
-      color: white;
-    }
-    #first {
-      font-size: 27px;
-    }
+   
   </style>
   <body>
     <section>
+      <p id="first"></p>
       <div id="container">
-        <p id="second"></p>
-        <span id="first"> </span>
+        <span id="second"> </span>
+        <span id="third"> </span>
+        <span id="fourth"> </span>
       </div>
     </section>
     <script>
-      const one = document.querySelector("span#first");
-      const two = document.querySelector("p#second");
-
+      const two = document.querySelector("p#first");
+      const one = document.querySelector("span#second");
+      const three = document.querySelector("span#third");
+      const four = document.querySelector("span#fourth");
+      
       function time() {
         let date = new Date();
         let hours = date.getHours();
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
 
-        // one.innerHTML = hours;
-        // two.innerHTML = minutes;
-        // three.innerHTML = seconds;
+        one.innerHTML = hours;
+        third.innerHTML = minutes;
+        fourth.innerHTML = seconds;
         two.innerHTML = date.toLocaleDateString();
-        one.innerHTML = hours + ":" + minutes + ":" + seconds;
+        // one.innerHTML = hours + ":" + minutes + ":" + seconds;
       }
       // setInterval(seconds,10)
       setInterval(time, 1000);

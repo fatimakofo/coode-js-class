@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="my-btn">Click</button>
+    <script>
+      /*
+            Arrow functions were introduced in ES6.
+            Arrow functions allow us to write shorter function syntax:
+        */
+      // Instead of this
+      // let myFunction = function(a,b){
+          // return a * b;
+      // }
+        // use this
+      let myFunction = (a, b) => a * b;
+
+      hello = (val) => "Hello " + val;
+      hello = (val) => "Hello " + val; // if its has one parameter you can also remove the parenthesis
+
+      //   let myGun = function () {
+      //     console.log(this.id);
+      //   };
+      //   let myGun = () => {
+      //     console.log(this);
+      //   };
+      //   myGun();
+      //   document.querySelector("button").addEventListener("click", myGun);
+
+      const findTotal = (...params) => {
+        let total = 0;
+        for (const value of params) {
+          total = total + value;
+        }
+        return total;
+      };
+
+      const result = findTotal(1, 2, 3, 4, 5, 6, 8, 90, 100, 19485,994);
+      console.log(result)
+    </script>
+  </body>
+</html>

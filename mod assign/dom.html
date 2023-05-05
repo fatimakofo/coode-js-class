@@ -628,16 +628,14 @@
       ];
       // Creating an element
       const newDiv = document.createElement("div");
-      const newP = document.createElement("p");
-      const newID = document.createElement('p');
-      const newA = document.createElement('p');
+     const newP = document.createElement("p");
+        const newId = document.createElement('p');
+        const newA = document.createElement("p");
+      // Append child
 
-     //Append child
-      newDiv.appendChild(newID);
+      newDiv.appendChild(newId);
       newDiv.appendChild(newP);
       newDiv.appendChild(newA);
-      
-      
 
       const button = document.createElement("button");
       button.innerHTML = "Click me and see";
@@ -645,19 +643,19 @@
       document.getElementById("demo").appendChild(newDiv);
 
       newP.innerHTML = qoutes[0].quote;
-      newID.innerHTML = qoutes[0].id;
-      newA.innerHTML = qoutes[0].author;
+newId.innerHTML = qoutes[0].id;
+newA.innerHTML = qoutes[0].author;
+
 
       button.addEventListener("click", function (event) {
         const randomNumber = Math.floor(Math.random() * qoutes.length);
         // newP.innerHTML = qoutes[randomNumber];
-        newP.innerHTML = qoutes[randomNumber].quote
-        newID.innerHTML = qoutes[randomNumber].id
-        newA.innerHTML = qoutes[randomNumber].author
 
-        
+        newP.innerHTML = qoutes[randomNumber].quote
+        newId.innerHTML = qoutes[randomNumber].id
+        newA.innerHTML = qoutes[randomNumber].author
       });
     </script>
-    <script src="./index.js"></script>
+    
   </body>
 </html>
