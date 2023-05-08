@@ -18,6 +18,19 @@ function numTwo(e) {
   num_two_value = Number(e.target.value);
 }
 
+<<<<<<< HEAD
+add.addEventListener("click", addition);
+function addition() {
+  let result1 = num_one_value + num_two_value;
+  operators(result1)
+  // alert(`Your result of ${num_one_value} and ${num_two_value} is ${result}`)
+}
+function operators(result) {
+  alert('Your result of ' + num_one_value + ' and ' + num_two_value + ' is ' + result);
+  num_one.value = '';
+  num_two.value = '';
+}
+=======
 function alerterAndReset(result) {
   alert(`Your result of ${num_one_value} and ${num_two_value} is ${result}`);
   num_one.value = "";
@@ -46,3 +59,4 @@ function divide() {
   let result4 = num_one_value / num_two_value;
  alerterAndReset(result4)
 }
+>>>>>>> f6f781d762130a17e1a5ecea5fa4608c2a9cf3db
