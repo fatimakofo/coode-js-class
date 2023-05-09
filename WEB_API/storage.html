@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        /**
+         * The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+
+The data is stored with no expiration date, and will not be deleted when the browser is closed.
+
+The data will be available for days, weeks, and years.
+         * 
+        */
+
+        // storing items to the local storage
+
+       // localStorage.setItem("test","Who is the boos?")
+
+        const value = localStorage.getItem("test")
+        // console.log(value)
+        
+        // Learnning about json and storing it in storages
+        const person = {
+            name:"Kunle",
+            age: 10,
+            married: false,
+        }
+        
+        let stringedObject = JSON.stringify(person);
+
+        //console.log(stringedObject); 
+        
+        // converting a json object to a javascript object
+       // stringedObject = JSON.parse(stringedObject);
+        
+       // console.log(stringedObject); 
+        
+        // storing it in localstorage
+        // localStorage.setItem("person", stringedObject)
+        
+        // getting an element from localstorage
+        let getElement = localStorage.getItem("person")
+
+        console.log(JSON.parse(getElement));
+
+        // removing items from localstorage
+        //localStorage.removeItem("person")
+        //localStorage.removeItem("test")
+
+
+        // localStorage.clear()
+
+
+        // sessionStorage.setItem("person", stringedObject)
+
+    </script>
+</body>
+</html>
