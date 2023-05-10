@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // a callback function is a function pass as an argument into another function
+        function alerter(result) {
+            window.alert(`Calculated result: ${result}`);
+        }
+
+        function addNum(a, b, myCallBackFunc) {
+            var sum = a + b;
+            myCallBackFunc(sum);// Callback Function
+        }
+
+        // addNum(5, 5, alerter);
+
+
+        // Creating a callback function that check return only a positive number
+
+        // create my array numbers
+        const numbers = [-10, 9, 3, -3, 0.5];
+
+        function removeNagativeNumber(myArr, myCallBack) {
+            let _number = [];
+            for (const number of myArr) {
+                if (myCallBack(number)) {
+                    _number.push(number);
+                }
+            }
+            return _number;
+        }
+
+        function checker(number) {
+            return number >= 0
+        }
+        const output = removeNagativeNumber(numbers, checker);
+        console.log(output);
+
+    </script>
+</body>
+
+</html>

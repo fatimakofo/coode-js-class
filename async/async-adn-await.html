@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        /**
+         * "async and await make promises easier to write"
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+         * 
+        */
+
+        //async function addNum(a, b){
+        //     return a + b;
+        // }
+
+        const addNum = async (a, b) => a + b;
+
+
+        async function myOutput(){
+            const output = await addNum(5, 5);
+            console.log(output)
+        }
+        myOutput()
+       // output.then(function (value) {
+       //     console.log(value)
+       // });
+
+
+    </script>
+</body>
+
+</html>
