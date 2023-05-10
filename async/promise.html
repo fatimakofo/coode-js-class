@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        /**
+         * "I Promise a Result!"
+
+"Producing code" is code that can take some time
+
+"Consuming code" is code that must wait for the result
+
+A Promise is a JavaScript object that links producing code and consuming code
+        */
+
+        const newPromise = new Promise(function (myRolve, myReject) {
+
+            // producing code
+
+            myRolve(); // on no error
+            myReject(); // on error
+
+        });
+
+
+        // consuming code
+        newPromise.then(
+            // on no error
+            function (value) { },
+            // on error
+            function (error) { }
+        )
+
+        // example 
+
+        let myPromise = new Promise(function (onSuccess, onError) {
+            // this is our promise
+            let money = false;
+
+            // our producing 
+            if (money) {
+                onSuccess("Bring Money!!!");
+            } else {
+                onError("Find money");
+            }
+        });
+
+        // cosuming code
+        myPromise.then(
+            function (value) {
+                console.log(value);
+            },
+            function (error) {
+                console.error(error);
+            }
+        )
+
+
+    </script>
+</body>
+
+</html>
