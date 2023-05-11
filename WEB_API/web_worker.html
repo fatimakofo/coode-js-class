@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="startCount()">Start Worker</button>
+    <button onclick="clearCount()">Stop Worker</button>
+
+    <script>
+      let newWorker;
+      function startCount() {
+        if (typeof Worker !== "undefined") {
+          newWorker = new Worker("./worker.js");
+
+          newWorker.onmessage = (event) => console.log(event.data);
+          newWorker.onerror = (event) => console.log(event);
+          newWorker.addEventListener("error", startCount);
+          newWorker.dispatchEvent = false;
+          //  console.log(newWorker);
+          // console.log("Worker supported");
+        } else {
+          console.log("Worker not supported");
+        }
+      }
+
+      function clearCount() {
+        newWorker.terminate();
+        newWorker = undefined;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+body > div {
+  height: 100vh;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+div.card > img.card-img-top {
+  height: 200px !important;
+  width: 100%;
+  object-fit: cover;
+}
+div.card {
+  height: 54vh !important;
+  width: 100%;
+}
