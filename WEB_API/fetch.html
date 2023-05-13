@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Quotes</h3>
+      <ul></ul>
+      <style scoped>
+        * {
+          margin: 0;
+          padding: 0;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          box-sizing: border-box;
+        }
+        div {
+          width: 50%;
+          margin: auto;
+          height: 100vh;
+          overflow-y: auto;
+          background-color: black;
+          padding: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 10px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+        ul {
+          margin: 0;
+          list-style: none;
+        }
+        li {
+          margin-bottom: 10px;
+          padding: 10px 8px;
+          background-color: #ccc;
+          border-radius: 4px;
+          font-size: 18px;
+        }
+        span {
+          background-color: orange;
+        }
+      </style>
+    </div>
+    <script>
+      // Sending  a request to a web server
+      // Fetch
+      //fetch("https://dummyjson.com/quotes")
+      //  .then(function (response) {
+      //    console.log(response);
+      //    return response.json();
+      //  })
+      //  .then((result) => {
+      //    let html = "";
+      //    result.quotes.forEach((quote) => {
+      //      html += `<li>${quote.quote}<br/><span>By: ${quote.author}</span></li>`
+      //    });
+      //    document.querySelector("ul").innerHTML = html;
+      //  })
+      //  .catch(function (onrejected) {
+      //    console.error(onrejected.message);
+      //  });
+
+      async function getQuotes() {
+        try {
+          const response = await fetch("https://dummyjson.com/quotes");
+          const data = await response.json();
+          let html = "";
+          data.quotes.forEach((quote) => {
+            html += `<li>${quote.quote}<br/><span>By: ${quote.author}</span></li>`;
+          });
+          document.querySelector("ul").innerHTML = html;
+        } catch (err) {
+          throw Error(err);
+        }
+      }
+
+      getQuotes();
+
+      // XhttpRequest
+
+      // Axios
+    </script>
+  </body>
+</html>

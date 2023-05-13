@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, porro!
+    </p>
+    <button copy-btn>Copy</button>
+    <button paste-btn>Paste</button>
+
+  
+        <input type="email"  required minlength="6" /> 
+        <button submit-btn>check</button>
+    <script>
+      // accessing user current location
+      function getCurrentUserLocation() {
+        // navigator.geolocation.getCurrentPosition(
+        // function (position) {
+        //   console.log(position);
+        //},
+        //function (reject) {
+        // console.log(reject);
+        // }
+        //);
+        navigator.geolocation.watchPosition(
+          function (position) {
+            console.log(position);
+          },
+          function (reject) {
+            console.log(reject);
+          }
+        );
+      }
+
+      // getCurrentUserLocation();
+
+      // We are copying text here
+      // document
+      //   .querySelector("button[copy-btn]")
+      //   .addEventListener("click", () => {
+      //     const text = document.querySelector("p").innerText;
+      //     navigator.clipboard.writeText(text);
+      //   });
+      // We are pasting text here
+      //document
+      //  .querySelector("button[paste-btn]")
+      //  .addEventListener("click", () => {
+      //    navigator.clipboard.readText().then((value) => {
+      //      document.querySelector("p").innerText = value;
+      //    });
+      //});
+
+      // Form validation
+      const input = document.querySelector("input");
+      const submitButton = document.querySelector("button[submit-btn]");
+
+      submitButton.addEventListener('click',()=>{
+        input.setCustomValidity("Error");
+        input.checkValidity();
+        console.log(input.validationMessage)
+      })
+    </script>
+  </body>
+</html>

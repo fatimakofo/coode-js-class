@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="header" id="head">
+          <h1 id="h1">Task Tracker</h1>
+          <button id="task"  onclick ="add()" class="green green2">
+            Add Task
+          </button>
+          <button id="close" onclick ="closing()" class="btn2">Close</button>
+        </div>
+        <!-- <div id="form"> -->
+          <form id="todo-form" class="toggle-up">
+            <div class="form1">
+                <label for="text">Task</label> <br />
+                <input type="text" placeholder="Add Task"  id="text" />
+            </div>
+            <div class="form2">
+              
+                <label for="text">Day & Time</label> <br />
+                <input type="text" placeholder="Add Day & Time" id="date"/>
+            </div>
+            <div class="form3">
+                <input type="checkbox" id="checkbox" />
+                <label for="text">Set Reminder</label>
+            </div>
+
+            <button class="btn" id="save">Save Task</button>
+          </form>
+        <!-- </div> -->
+        <ul>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
